@@ -524,7 +524,7 @@ describe("DepartAfterQuery", () => {
 
   it("omits calendars not running that day", () => {
     const trip = t(
-      st("B", null, 1030),
+      st("B", null, 1040),
       st("C", 1100, null)
     );
 
@@ -570,8 +570,8 @@ describe("DepartAfterQuery", () => {
 
   it("omits calendars not running that day of the week", () => {
     const trip = t(
-      st("B", null, 1030),
-      st("C", 1100, null)
+      st("B", null, 1040),
+      st("C", 1110, null)
     );
 
     const days = Object.assign({}, allDays, { 1: false });
